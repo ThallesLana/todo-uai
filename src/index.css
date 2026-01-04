@@ -1,0 +1,122 @@
+/* Todo Uai Design System - Mineiro Style */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    /* Coffee-inspired palette */
+    --background: 45 100% 96%;
+    --foreground: 25 93% 14%;
+
+    --card: 45 96% 89%;
+    --card-foreground: 25 93% 14%;
+
+    --popover: 45 100% 96%;
+    --popover-foreground: 25 93% 14%;
+
+    /* Racing Red - Primary CTA */
+    --primary: 10 85% 50%;
+    --primary-foreground: 45 100% 96%;
+
+    /* Coffee Surface */
+    --secondary: 45 96% 89%;
+    --secondary-foreground: 25 93% 14%;
+
+    --muted: 45 50% 90%;
+    --muted-foreground: 25 40% 40%;
+
+    --accent: 45 80% 85%;
+    --accent-foreground: 25 93% 14%;
+
+    /* Success Green */
+    --success: 145 70% 30%;
+    --success-foreground: 45 100% 96%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 50% 85%;
+    --input: 45 50% 85%;
+    --ring: 10 85% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(45 100% 96%) 0%, hsl(45 96% 89%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(10 85% 50%) 0%, hsl(10 80% 42%) 100%);
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px -4px hsl(25 93% 14% / 0.08);
+    --shadow-elevated: 0 12px 40px -8px hsl(25 93% 14% / 0.12);
+    --shadow-cta: 0 8px 24px -4px hsl(10 85% 50% / 0.35);
+
+    --sidebar-background: 45 100% 96%;
+    --sidebar-foreground: 25 93% 14%;
+    --sidebar-primary: 10 85% 50%;
+    --sidebar-primary-foreground: 45 100% 96%;
+    --sidebar-accent: 45 96% 89%;
+    --sidebar-accent-foreground: 25 93% 14%;
+    --sidebar-border: 45 50% 85%;
+    --sidebar-ring: 10 85% 50%;
+  }
+
+  .dark {
+    --background: 25 30% 8%;
+    --foreground: 45 100% 96%;
+
+    --card: 25 25% 12%;
+    --card-foreground: 45 100% 96%;
+
+    --popover: 25 25% 12%;
+    --popover-foreground: 45 100% 96%;
+
+    --primary: 10 85% 55%;
+    --primary-foreground: 25 93% 14%;
+
+    --secondary: 25 20% 18%;
+    --secondary-foreground: 45 100% 96%;
+
+    --muted: 25 20% 18%;
+    --muted-foreground: 45 30% 65%;
+
+    --accent: 25 25% 20%;
+    --accent-foreground: 45 100% 96%;
+
+    --success: 145 60% 40%;
+    --success-foreground: 45 100% 96%;
+
+    --destructive: 0 62.8% 45%;
+    --destructive-foreground: 45 100% 96%;
+
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 10 85% 55%;
+
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-elevated: 0 12px 40px -8px hsl(0 0% 0% / 0.4);
+    --shadow-cta: 0 8px 24px -4px hsl(10 85% 55% / 0.4);
+
+    --sidebar-background: 25 30% 8%;
+    --sidebar-foreground: 45 100% 96%;
+    --sidebar-primary: 10 85% 55%;
+    --sidebar-primary-foreground: 25 93% 14%;
+    --sidebar-accent: 25 25% 15%;
+    --sidebar-accent-foreground: 45 100% 96%;
+    --sidebar-border: 25 20% 20%;
+    --sidebar-ring: 10 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
