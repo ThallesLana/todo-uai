@@ -1,6 +1,8 @@
 import logo from "@/assets/todo-uai-logo.svg";
 import * as React from "react";
 import LegalModal from "@/components/LegalModal";
+import PrivacyContent from "@/components/legal/PrivacyContent";
+import TermsContent from "@/components/legal/TermsContent";
 
 const Footer = () => {
   const [openModal, setOpenModal] = React.useState<"terms" | "privacy" | null>(null);
@@ -69,65 +71,11 @@ const Footer = () => {
       </div>
 
       <LegalModal open={openModal === "terms"} title="Termos de Uso" onClose={closeModal}>
-        <h4>1. Aceite</h4>
-        <p>
-          Ao acessar e utilizar o Todo Uai ("Serviço"), você concorda com estes Termos de Uso. Se você não concordar,
-          não utilize o Serviço.
-        </p>
-        <h4>2. Uso do Serviço</h4>
-        <p>
-          Você concorda em utilizar o Serviço de forma lícita, sem tentar interromper, explorar vulnerabilidades ou
-          acessar áreas não autorizadas.
-        </p>
-        <h4>3. Conteúdo e dados</h4>
-        <p>
-          Você é responsável pelas informações que inserir no Serviço (ex.: tarefas e listas). Não publique conteúdo
-          ilegal ou que viole direitos de terceiros.
-        </p>
-        <h4>4. Disponibilidade</h4>
-        <p>
-          O Serviço pode sofrer interrupções para manutenção, atualizações ou por fatores externos. Não garantimos
-          disponibilidade ininterrupta.
-        </p>
-        <h4>5. Alterações</h4>
-        <p>
-          Podemos atualizar estes Termos periodicamente. Ao continuar usando o Serviço após mudanças, você concorda com
-          a versão atualizada.
-        </p>
-        <h4>6. Contato</h4>
-        <p>
-          Para dúvidas, entre em contato pelos canais informados no aplicativo/site.
-        </p>
+        <TermsContent />
       </LegalModal>
 
       <LegalModal open={openModal === "privacy"} title="Política de Privacidade" onClose={closeModal}>
-        <h4>1. Dados coletados</h4>
-        <p>
-          Podemos coletar dados fornecidos por você (ex.: nome, e-mail, tarefas) e dados técnicos (ex.: navegador,
-          endereço IP, logs) para operar e melhorar o Serviço.
-        </p>
-        <h4>2. Uso dos dados</h4>
-        <p>
-          Utilizamos os dados para fornecer funcionalidades, suporte, segurança, prevenção de fraudes e melhorias.
-        </p>
-        <h4>3. Compartilhamento</h4>
-        <p>
-          Não vendemos seus dados. Podemos compartilhar informações com provedores de infraestrutura e serviços (quando
-          necessário) e em cumprimento de obrigações legais.
-        </p>
-        <h4>4. Cookies e tecnologias similares</h4>
-        <p>
-          Podemos usar cookies/armazenamento local para preferências e funcionamento básico. Você pode gerenciar
-          configurações no seu navegador.
-        </p>
-        <h4>5. Segurança</h4>
-        <p>
-          Adotamos medidas razoáveis para proteger seus dados, mas nenhum sistema é 100% seguro.
-        </p>
-        <h4>6. Seus direitos</h4>
-        <p>
-          Você pode solicitar acesso, correção ou exclusão de dados, quando aplicável, conforme a legislação.
-        </p>
+        <PrivacyContent />
       </LegalModal>
     </footer>
   );
