@@ -1,4 +1,3 @@
-import logo from "@/assets/todo-uai-logo.svg";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -6,7 +5,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container flex items-center justify-between h-16 px-4">
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Todo Uai" className="h-8 w-8 cursor-pointer" onClick={() => window.location.href = "/"} />
+          <img src="/assets/todo-uai-logo.svg" alt="Todo Uai" className="h-8 w-8 cursor-pointer" onClick={() => window.location.href = "/"} />
         </div>
         
         <nav className="hidden md:flex items-center gap-8">

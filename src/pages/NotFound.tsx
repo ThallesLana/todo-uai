@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <div className="text-center">
-        <img src="src/assets/404.svg" alt="Not Found" className="w-72 h-72 mb-4 self-center" />
+        <img src="/assets/404.svg" alt="Not Found" className="w-72 h-72 mb-4 self-center" />
         <p className="text-center mb-5">Uai, encontramo esse trem não, sô!</p>
         <Button variant="hero" className="text-white" asChild>
           <a href="/">

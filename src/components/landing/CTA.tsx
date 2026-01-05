@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/todo-uai-logo.svg";
 
 const CTA = () => {
   return (
@@ -11,7 +10,7 @@ const CTA = () => {
           <div className="absolute bottom-0 right-0 w-60 h-60 bg-success/10 rounded-full blur-3xl" />
           
           <div className="relative z-10">
-            <img src={logo} alt="Todo Uai" className="w-16 h-16 mx-auto mb-6" />
+            <img src="/assets/todo-uai-logo.svg" alt="Todo Uai" className="w-16 h-16 mx-auto mb-6" />
             
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Bora organizar esse trem tudo?

@@ -1,4 +1,3 @@
-import logo from "@/assets/todo-uai-logo.svg";
 import * as React from "react";
 import LegalModal from "@/components/LegalModal";
 import PrivacyContent from "@/components/legal/PrivacyContent";
@@ -44,7 +43,7 @@ const Footer = () => {
       <div className="container max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Todo Uai" className="h-8 w-8 cursor-pointer" onClick={() => window.location.href = "/"} />
+            <img src="/assets/todo-uai-logo.svg" alt="Todo Uai" className="h-8 w-8 cursor-pointer" onClick={() => window.location.href = "/"} />
           </div>
           
           <p className="text-sm text-muted-foreground text-center">
