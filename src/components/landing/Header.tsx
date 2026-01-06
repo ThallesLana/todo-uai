@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,15 +10,15 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Funcionalidades
-          </a>
-          <a href="#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          </Link>
+          <Link to="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Como funciona
-          </a>
-          <a href="#why-use" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          </Link>
+          <Link to="/#why-use" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Por que usar
-          </a>
+          </Link>
         </nav>
 
         <div className="flex items-center gap-3">
