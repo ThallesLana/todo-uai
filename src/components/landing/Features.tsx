@@ -19,7 +19,7 @@ const features = [
   {
     icon: Palette,
     title: "Cores pra organizar melhor",
-    description: "Cada lista ou tarefa pode ter sua cor.",
+    description: "Cada lista pode ter sua cor personalizada.",
   },
   {
     icon: CheckCircle2,
